@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Operations</title>
+		<title>Basic Operations Calculator</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="basicOperations.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -19,7 +20,9 @@
 				<input type="radio" name="mathopr" id="opr" value="+" />&plus;
 				<input type="radio" name="mathopr" id="opr" value="-" />&minus;
 				<input type="radio" name="mathopr" id="opr" value="*" />&times;
-				<input type="radio" name="mathopr" id="opr" value="/" />&divide;
+				<input type="radio" name="mathopr" id="opr" value="/" />÷
+				<br />
+				<span id="err_opr"></span>
 			</p>
 
 			<p>
@@ -30,7 +33,5 @@
 			<button id="btn">Calculate</button>
 			<p id="Output"></p>
 		</div>
-
-		<script src="basicOperations.js"></script>
 	</body>
 </html>
